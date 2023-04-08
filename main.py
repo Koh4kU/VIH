@@ -13,7 +13,7 @@ trans_table=diccionario.maketrans(replace_from, replace_to)
 string_replace=diccionario.translate(trans_table)
 string_final=string_replace.lower()
 
-#function that gives a value of VIH negative=no, 0=maybe, positive=yes
+#function that gives a value of VIH if res >5 have VIH
 result=[]
 string_temp=""
 res1=0
@@ -28,8 +28,6 @@ for directory in os.listdir("./resources/dataset"):
             for z in string_list:
                 if (z in string_temp):
                     res1 += 1
-                else:
-                    res1 -= 1
             if (res1 > 0):
                 res2 += 1
 

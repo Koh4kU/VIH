@@ -30,4 +30,1091 @@ Sarcoma de kaposi
 Sindrome consuntivo
 Complicaciones neurologicas
 Enfermedad renal
-Enfermedad hepática
+Enfermedad hepáticaAcantosis pigmentaria
+Acceso ampliado
+Accidente cerebrovascular P
+Ácido desoxirribonucleico (ADN)
+Ácido láctico
+D Ácido nucleico
+Ácido ribonucleico (ARN)
+Acidosis láctica
+Adenopatía
+Adenovirus
+Adherencia
+Aditivo
+Administración de Alimentos y Medicamentos (FDA)
+Administración de Recursos y Servicios de Salud
+(HRSA) K
+Administración de Servicios de Abuso de Sustancias y
+Salud Mental (SAMHSA) Q
+Administración para el Financiamiento de la Atención
+de Salud
+Administración para el Financiamiento del Cuidado
+de la Salud
+ADN provírico
+E Advertencia destacada
+Advertencia destacada en recuadro
+Adyuvante
+Afección característica del SIDA
+Afta I
+Agammaglobulinemia
+Agente patógeno R
+Agentes de reversión de latencia
+Agentes revertidores de la latencia
+I Agotamiento de los linfocitos T
+Agranulocitopenia
+Alanina-aminotransferasa (ALAT)
+Albúmina
+V Albúmina en la orina
+Albuminuria
+Alerta clínica
+Almohadilla de grasa dorsocervical
+Alopecia
+Alta tensión arterial
+Aminoácidos N
+Análisis basado en la reacción en cadena de la P
+polimerasa con transcriptasa inversa (RT-PCR)
+Análisis bioquímicos básicos
+Análisis cualitativo de amplificación mediada por
+transcripción
+Análisis cuantitativo de ADN ramificado
+Análisis de esputo
+Análisis de orina
+Análisis de proliferación de los linfocitos
+Análisis de resistencia
+Análisis de sangre completo
+Análisis fenotípico
+Análisis genotípico
+Anemia
+Antagonismo medicamentoso
+Antagonista de CCR5
+Antagonista de CXCR4
+Antenatal
+Antibiótico
+Anticoagulante
+Anticuerpo
+O Anticuerpos ampliamente neutralizantes (bNAbs)
+Antifúngico
+Antígeno
+Antimicótico
+Antineoplásico
+Antiprotozoario F
+Antirretroviral (ARV)
+Antivírico K
+Antivírico anticodificante M
+Aparato genitourinario
+Apoptosis
+Área bajo la curva (ABC)
+O ARN del VIH
+Q ARN mensajero (ARNm)
+Arritmia
+V Arterioesclerosis
+Arteriopatía coronaria
+Artralgia
+Asesor
+Asesoramiento de la profilaxis preexposición (PrEP)
+Asesoramiento sobre el VIH O
+Asociación en dosis fijas
+Aspartato aminotransferasa (AST)
+Aspergilosis
+Astenia
+Ataque cardíaco
+Ataxia
+Atención médica estándar
+Atención paliativa
+Atenuado
+Ateroesclerosis
+Aterosclerosis
+Azúcar en la sangre
+Bacteria
+F Bactericida
+Bacteriostático
+Barrera hematoencefálica (BHE)
+Bartonelosis
+T Basófilo
+Bazo
+Biblioteca Nacional de Medicina (NLM)
+BID I
+Bilirrubina M
+Biodisponibilidad Q
+Biopsia
+Bloqueador de receptor CCR5 V
+Broncoespasmo
+Bronconeumonía
+Broncoscopia
+Cambios en la constitución
+Campilobacteriosis D
+Cáncer cervicouterino
+Cáncer del cuello uterino
+Cáncer relacionado con el SIDA
+Candidiasis
+Candidiasis oral
+Cápside
+Caquexia
+Cardiomiopatía
+N Cardiopatía coronaria
+T Cardiovascular
+Carga de comprimidos
+Carga viral D
+Carga viral indetectable I
+Cascada de tratamiento del VIH
+CCR5
+I CDC-INFO
+Célula B
+Célula CD4
+S Célula dendrítica
+W Célula dotada de memoria
+Célula presentadora de antígenos (CPA)
+Célula T
+Célula T CD4
+Célula T inhibidora
+Célula T reguladora
+Células madre L
+Células primordiales
+Células progenitorias
+Centro Nacional de Salud Complementaria e Integral
+(NCCIH)
+Centros de Educación y Capacitación sobre el SIDA
+F (AETCs)
+M Centros para el Control y la Prevención de
+Enfermedades (CDC)
+Centros para Servicios de Medicare y Medicaid (CMS)
+Cepa
+Cesárea
+Chancro blando
+Chancroide
+Ciclo de vida
+Circuncisión masculina
+Cistoisosporiasis
+Citocina
+Citocromo P450 (CYP450)
+Citocromo P450 3A4 (CYP3A4)
+Citomegalovirus (CMV)
+Citopenia
+K Citotóxico
+M Clade
+O Clamidia
+Clase de medicamentos
+Clasificación de Tanner I
+Clastógeno K
+ClinicalTrials.gov O
+Clonación génica
+Coagulopatía
+D Coccidioidomicosis Sinónimo(s): Fiebre del Valle,
+Fiebre del Valle de San Joaquín, Reumatismo del
+desierto
+Cohorte
+Colangiopatía
+Colesterol
+Colitis
+Combinación básica
+Comorbilidad
+Complejo ALH
+Complejo de demencia causado por el SIDA
+K Complejo del antígeno leucocitario humano
+Complejo inmunitario
+Complicaciones neurológicas del SIDA
+Concentración de un medicamento
+Concentración máxima (C )
+max
+Concentración mínima (C )
+A min
+Concentrado de inmunoglobulinas de administración
+intravenosa
+G Condiloma acuminado
+I Condón
+Conducto genitourinario
+Conjuntivitis
+Consentimiento fundamentado
+Consentimiento informado
+Conteo sanguíneo completo (CSC)
+Continuo de atención de la infección por el VIH I
+Continuo de atención del VIH K
+I Contraindicación
+Contraindicación absoluta
+Contraindicación relativa
+Control vírico
+Controladores de élite
+Correceptor
+Crioablación
+Criocirugía
+Crioterapia
+Criptococosis P
+Criptosporidio
+Criptosporidiosis
+I Cristaluria
+Criterio clínico de valoración
+Q Criterio indirecto de valoración
+Criterios de admisibilidad
+Criterios de exclusión e inclusión F
+Cromosoma
+Cuantificación del efecto de una intervención K
+Cuasiespecie
+Cuello de bisonte T
+Cuello uterino
+Cuidado paliativo
+F Culebrilla
+Cultivo de esputo
+Cumplimiento terapéutico
+Cutáneo
+CXCR4
+Definición de casos de SIDA
+M Demencia relacionada con el VIH
+O Departamento de Salud y Servicios Humanos (HHS)
+Depresión
+Dermatitis seborreica
+Derrame cerebral M
+Descanso del tratamiento
+Desensibilización
+Desprendimiento de retina
+Deterioro cognitivo
+Determinación de las concentraciones sanguíneas de
+un fármaco
+M Diabetes
+Diabetes mellitus
+Diagnóstico definitivo
+Diagnóstico presuntivo
+Diseminada
+Dislipidemia O
+Disminución del número de leucocitos T S
+Disnea
+Displasia
+Disritmia cardíaca
+División del Síndrome de Inmunodeficiencia
+G Adquirida (DAIDS)
+K Dosificación
+O Dosis
+Edema
+Efecto adverso
+Efecto colateral G
+Efecto de placebo I
+Efecto indeseable
+Efecto secundario
+Efecto sinérgico
+Eficacia S
+Elevación ligera de la carga viral
+Embrión
+Encefalitis
+Encefalopatía causada por el VIH/SIDA
+Endémico
+Enfermedad causada por úlceras genitales
+Enfermedad contagiosa
+Enfermedad de Chagas
+Enfermedad de Hodgkin M
+Enfermedad de restauración inmunitaria O
+Enfermedad de transmisión sexual (ETS)
+Enfermedad infecciosa
+Enfermedad inflamatoria de la pelvis (EIP)
+Enfermedad simultánea
+Enfermedad terminal de los riñones
+Enfermedad terminal del hígado
+Enfermedad transmisible
+Enfermedad tuberculosa
+Enlace I
+Enrojecimiento de los
+ojos Q
+Ensamblaje
+Ensayo abierto
+Ensayo aleatorizado
+Ensayo clínico
+Ensayo controlado
+Ensayo controlado con placebo D
+Ensayo de ausencia de inferioridad I
+Ensayo de búsqueda de dosis M
+Ensayo de fase 1
+Ensayo de fase 2
+Ensayo de fase 3
+Ensayo de fase 4
+Ensayo de intervención
+Ensayo de no inferioridad
+Ensayo de observación
+Ensayo de superioridad
+Entérico
+Enteritis V
+Envoltura
+Envoltura del VIH
+Enzima
+Enzimo análisis
+N Enzimoinmunoanálisis de adsorción
+T Eosinofilia
+Epidémico
+Epidemiología D
+Epitelio
+Epítopo K
+Equimosis
+Eritema
+Eritema gingival lineal
+Eritema multiforme
+Eritrocito
+Erradicación
+Escalofrío
+Especificidad
+Esperma
+N Espermicida
+Esplenomegalia
+Estado de desempeño de Karnofsky
+Estado serológico
+Estándar de atención K
+Estatina M
+Esteatosis hepática
+Estigma T
+Estomatitis
+D Estrategia de activar y eliminar
+Estrategia de desalojar y eliminar
+P Estudio con anonimato sencillo
+Estudio con enmascaramiento único
+Estudio de doble anonimato
+Estudio de doble ciego
+Estudio de doble enmascaramiento G
+Estudio de imágenes por resonancia magnética I
+Estudio de la historia natural de una enfermedad
+Estudio interinstitucional del VIH en las mujeres (WIHS)
+Estudio multicéntrico de cohortes de SIDA
+F Estudio retrospectivo
+K Etiología
+Evolución clínica
+Evolución de la infección por el VIH
+Evolución del virus
+Exposición ocupacional
+Factor estimulante de colonias de granulocitos (G-CSF)
+Factor estimulante de colonias de granulocitos y
+macrófagos (GM-CSF)
+Farmacocinética
+Farmacología
+Farmacorresistencia
+Farmacosensibilidad
+Farmacoterapia de mantenimiento
+Fecundación in vitro
+Feto
+Ficha técnica
+Fiebre del Valle
+Fiebre del Valle de San Joaquín
+Fijación
+Fluido seminal
+Foliculitis eosinófila
+Formulación
+Fosfatasa alcalina (FA)
+V Fotosensibilidad
+Fracaso terapéutico
+Fracaso virológico F
+Frotis de Pap K
+Frotis de Papanicolaou M
+Fusión
+Gammaglobulina
+Gamma-glutamil transpeptidasa
+Gamma-glutamil-transferasa (GGT)
+Ganglios linfáticos
+Gastroenteritis
+Gastrointestinal
+Gemación
+Gen
+Genoma
+Genomanipulación
+Genotecnología
+Genoterapia
+Giba de búfalo F
+Ginecomastia
+Gingivitis causada por el VIH
+Gingivitis de banda roja N
+Glóbulo blanco P
+Glóbulo rojo
+Glucoproteína
+Glucoproteína 120
+Glucoproteína 160
+Glucoproteína 41
+Glucosa
+Gonorrea
+gp120
+gp160
+gp41 D
+Grado de madurez sexual
+Granulocito
+Granulocitopenia
+Grasa intrabdominal
+Grasa visceral
+Grupo 076 de Ensayos Clínicos sobre el SIDA
+Pediátrico (PACTG 076)
+Grupo de Ensayos Clínicos Internacionales sobre
+I el SIDA Materno, Pediátrico y de Adolescentes
+(IMPAACT)
+Grupo de Ensayos Clínicos sobre el SIDA (ACTG)
+Grupo de Ensayos Clínicos sobre el SIDA Pediátrico
+T (PACTG)
+Grupo de estudio
+Grupo de referencia D
+Grupo experimental
+Grupo testigo
+Hematocrito
+D Hematotóxico
+Hematuria
+Hemivida
+Hemofilia
+Hemoglobina (Hgb)
+R Hemograma completo
+Hemólisis
+Hemorragia D
+Hepático
+Hepatitis
+Hepatomegalia Q
+Hepatopatía terminal
+Hepatotoxicidad
+Herpes zóster
+I Hígado
+Hígado graso
+Hiperadiposidad
+R Hiperbilirrubinemia causada por excipientes
+T Hipergammaglobulinemia
+Hiperglucemia
+Hiperlipidemia D
+Hiperplasia
+Hipersensibilidad
+Hipertensión O
+Hipertrigliceridemia
+Hiperuricemia
+D Hipogammaglobulinemia
+I Hipogonadismo
+Hipoxia
+Histoplasmosis
+Hongo
+Hormona
+Hormona del crecimiento humano (hGH)
+HSH
+HSHM
+Huésped O
+Ictericia
+Ictericia nuclear
+Idiopático
+Imágenes por resonancia magnética (MRI)
+In utero
+In vitro
+In vivo
+Incidencia
+Indicación
+Índice terapéutico
+Infarto del miocardio (IM) Q
+Infección
+Infección aguda por el VIH
+Infección crónica por el VIH
+Infección de transmisión sexual (ITS)
+Infección oportunista
+Infección por el complejo Mycobacterium avium (MAC)
+Infección por el virus de la hepatitis B (VHB)
+Infección por el virus de la hepatitis C (VHC)
+Infección por el virus del herpes simple 1 (VHS-1)
+Infección por el virus del herpes simple 2 (VHS-2)
+O Infección por levaduras
+Infección por Mycobacterium kansasii
+Infección por Penicillium marneffei
+Infección por Streptococcus Pneumoniae
+Infección por Talaromyces marneffei
+Infección simultánea
+Infección subclínica
+Infección tuberculosa latente
+Infeccioso
+I Infusión
+Ingeniería genética
+Inhibidor CCR5
+Inhibidor de la fijación
+Inhibidor de la fusión
+Inhibidor de la integrasa
+Inhibidor de la proteasa P
+(IP)
+Inhibidor de la
+transcriptasa inversa
+B análogo de los
+nucleósidos (ITIN)
+K Inhibidor de la
+transcriptasa inversa
+análogo de los
+M nucleótidos
+Inhibidor de la transcriptasa inversa no análogo de
+los nucleósidos (ITINN)
+Inhibidor de la F
+transferencia de cadenas
+de la integrasa (INSTI)
+Inhibidor de Rev
+Inhibidores de CYP3A
+Inhibidores de la entrada
+D Inhibidores posfijación
+Inmunidad
+Inmunidad activa
+Inmunidad adquirida D
+Inmunidad celular
+Inmunidad innata I
+Inmunidad pasiva
+Inmunitario
+Inmunización
+Inmunocompetente V
+Inmunocomplejo
+Inmunodeficiencia
+Inmunodepresión
+M Inmunodeprimido
+Inmunogenia
+Inmunoglobulina
+Inmunoglobulina intravenosa (IGIV)
+Inmunomoduladores
+Inmunoterapia
+Inmunoterapia pasiva
+Inoculación
+Inseminación artificial
+Inseminación intrauterina
+Instituto Nacional de Alergias y Enfermedades
+I Infecciosas (NIAID)
+N Instituto Nacional del Cáncer (NCI)
+Institutos Nacionales de la Salud (NIH)
+Insulina
+Integración F
+Integrasa M
+Intensificadores farmacocinéticos
+Interacción de un medicamento con otro
+M Interacción de un medicamento con un alimento
+Interacción farmacológica I
+Interacción medicamentosa
+Interferón (IFN)
+F Interleucina-2 (IL-2)
+Interleucina-7 (IL-7)
+Interrupción estructurada del tratamiento
+Intervención
+Intradérmico
+Intramuscular
+Intravaginal
+Intravenoso
+Invasivo O
+Inyección intracitoplásmica de espermatozoides
+Isosporiasis
+Isquemia
+Junta de Revisión de la Protección de los Seres
+Humanos
+Junta de Revisión Institucional (IRB)
+Junta de Vigilancia de Datos y Seguridad
+Kernícterus
+Latencia clínica
+Latencia del virus
+Lavado de espermatozoides
+Leishmaniasis
+Lentivirus
+Lesión
+Leucocito
+Leucocitosis
+I Leucoencefalopatía multifocal progresiva
+Leucopenia
+Leucoplasia vellosa bucal
+Ley CARE
+LGBTQ
+Linfa
+Linfadenodapía generalizada persistente I
+Linfadenopatía
+Linfocito
+Linfocito B
+Linfocito CD4
+Linfocito CD8
+Linfocito citolítico natural
+Linfocito dotado de memoria
+Linfocito T
+R Linfocito T CD4
+Linfocito T CD8
+Linfocito T citotóxico D
+Linfocito T cooperador
+Linfocito T inhibidor
+Linfocito T regulador
+Linfogranuloma venéreo
+Linfoma
+Linfoma de Burkitt
+Linfoma de Hodgkin
+Linfoma de los linfocitos B
+Linfoma no hodgkiniano
+Linfopenia
+Lípido
+Lipidograma
+Lipoatrofia
+Lipohipertrofia
+Lipoma
+Líquido cefalorraquídeo (LCR)
+Lisis
+Localizado
+Log10
+Logaritmo
+Macrófago
+Mala distribución de la grasa
+Mala redistribución de grasa
+Malaria
+Malestar
+Maligno
+Marcador indirecto V
+Mastocito
+D Medicamento antiinflamatorio no esteroide (AINE)
+Medicamento aprobado
+Medicamento bactericida
+Medicamento bacteriostático
+Medicamento en fase de investigación clínica D
+Medicamento experimental
+Medicamento genérico
+Medicina complementaria y alternativa O
+MEDLINE
+F MedlinePlus
+Médula ósea
+Meningitis
+Meningitis criptocócica
+Metabólico
+Metabolismo
+Mialgia F
+Micosis
+Microbicida
+Microbio
+Microglobulina beta-2
+Microorganismo
+Microsporidiosis
+Mielina
+Mielodepresión
+M Mielopatía vacuolar
+Miocardiopatía
+V Miodinia
+Mioneuralgia
+Miopatía
+Miopatía de bastones
+Miopatía nemalínica de aparición en adultos G
+relacionada con el VIH
+Miopatía nemalínica o filamentosa
+Mitocondria
+Modificadores de la respuesta biológica S
+Molusco contagioso
+Monocito maduro de la sangre periférica
+I Monoinfección
+K Mononeuropatía
+Monoterapia
+Morbilidad
+Mortalidad
+Mucocutáneo D
+Muerte celular programada
+Multiplicación
+Multiplicar
+Mutación
+Mutágeno
+Mycobacterium tuberculosis
+Nadir
+Navegación del VIH
+Navegador
+Navigación de la profilaxis preexposición (PrEP) G
+Necrólisis epidérmica tóxica
+Necrosis avascular
+Necrosis hepática
+Nefritis
+Nefritis intersticial
+Nefrolitiasis
+Nefropatía relacionada con el VIH
+Nefropatía terminal
+Nefrotóxico
+Neogenética
+Neonatal
+R Neoplasia
+Neumocistosis
+Neumonía
+Neumonía por Pneumocystis carinii (PCP)
+Neumonía por Pneumocystis jirovecii I
+Neumonitis intersticial linfocítica
+Neumonitis intersticial linfoide
+Neuralgia
+Neuropatía
+Neuropatía periférica
+Neuropatía sensitiva distal
+Q Neuropatía tóxica causada por antirretrovirales
+Neutrófilo
+Neutropenia
+Normas asistenciales
+Núcleo G
+Núcleo del VIH K
+Nucleósido
+Nucleótido
+Observancia terapéutica
+Oficina de Investigaciones sobre el SIDA (OAR)
+Oficina de Salud de las Minorías (OMH)
+M Oposición medicamentosa
+Organismo de Investigación y de Calidad de la
+Atención de Salud (AHRQ)
+Organización comunitaria
+Organización de base comunitaria (OBC)
+Organización de Servicios del SIDA
+Organización Mundial de la Salud (OMS)
+Orientación y atención antes de la concepción M
+Osteonecrosis
+Osteopenia
+Osteoporosis
+p24
+Paciente con tratamiento
+previo
+Paciente con tratamiento
+previo con medicamentos
+de tres clases
+Paciente sin tratamiento previo K
+Pacientes no progresores a largo plazo
+Pacientes sin progresión de la enfermedad a
+largo plazo
+L Pancitopenia
+Páncreas
+R Pancreatitis
+Pandemia
+Papiloma D
+Parásito
+Pareja concordante
+Pareja de estado mixto
+Pareja discordante
+D Parenteral
+Parestesia
+Parte central del VIH
+Parto por cesárea
+Patogenia
+PCP
+Peniciliosis
+Péptido
+Perfil de lípidos G
+Perianal
+Peribucal
+Perinatal
+Período anterior al parto
+Período de incubación
+D Período intraparto
+Período silente
+Personas con el VIH/SIDA
+Píldora de azúcar
+Placebo
+Placenta
+Plan Presidencial de Emergencia para Alivio del SIDA
+(PEPFAR)
+Plaqueta
+Plasma
+Polineuritis M
+Polineuropatía O
+Polineuropatía desmielinizante inflamatoria aguda Q
+Polineuropatía desmielinizante inflamatoria crónica
+Porcentaje de células T CD4
+Porcentaje de linfocitos CD4
+G Porcentaje de linfocitos T CD4
+I Posnatal
+K Potenciadores farmacocinéticos
+PPE
+PPrE
+Preclínico
+Prenatal
+Presentación
+Preservativo
+Presión arterial
+Prevalencia
+Prevención de la transmisión maternoinfantil (PTMI)
+G Prevención de la transmisión perinatal
+Proctitis
+Pródromo
+Profiláctico
+Profilaxis
+Profilaxis posexposición (PEP)
+Profilaxis posexposición no ocupacional (nPEP)
+Profilaxis posexposición ocupacional (oPEP)
+Profilaxis post exposición no ocupacional (PPENO)
+Profilaxis postexposición T
+Profilaxis preexposición (PrEP)
+Profilaxis primaria
+Programa de Asistencia para Medicamentos contra el
+SIDA (ADAP)
+Programa Ryan White sobre el VIH/SIDA
+Prospecto de envase
+Proteasa
+Proteína
+Proteinuria
+F Protocolo
+K Protozoario
+Q Provirus
+Prueba combinada de detección de antígenos y
+anticuerpos
+Prueba cutánea de tuberculina
+Prueba de ácido nucleico
+Prueba de amplificación del ácido nucleico Q
+Prueba de densidad ósea
+Prueba de derivado proteínico purificado
+Prueba de detección de HLA-B*5701
+Prueba de diferenciación de anticuerpos
+Prueba de la carga viral
+Q Prueba de la función hepática
+V Prueba de Mantoux
+Prueba de Papanicolaou
+Prueba de resistencia
+Prueba de resistencia fenotípica a los antirretrovirales
+Prueba de resistencia genotípica a los
+antirretrovirales
+Prueba ELISA
+Prueba rápida
+Prueba serológica
+Pruebas de riesgo coronario
+Pruebas metabólicas completas
+Prurito
+PubMed
+Puerperio
+Pulmonar G
+Pulmonía intersticial linfoide I
+Punción lumbar K
+Punto de comparación
+Punto de estabilización
+Punto de estabilización de la carga viral W
+Punto de partida
+Puntuación de Child-Pugh
+Puntuación de Karnofsky
+Púrpura trombocitopénica idiopática
+H Púrpura trombocitopénica inmunitaria (PTI)
+QD
+QID
+Quimiocinas
+Quimioprevención
+Quimioprofilaxis O
+Quimioterapia
+Rabdomiólisis
+Radioabsorciometría de doble energía
+Reacción adversa
+Reacción de hipersensibilidad
+Reacción en cadena de la polimerasa (RCP)
+Reacción en el sitio de inyección
+T Reacción medicamentosa adversa
+Reacción medicamentosa con eosinofilia y síntomas
+sistémicos
+Rebote
+Rebote viral
+Rebote vírico
+Recaída
+Receptor
+F Receptor 4 de quimiocina C-X-C
+Receptor 5 de quimiocina C-C
+Receptor 5 de quimiocina cisteína-cisteína
+Receptor de CD4
+R Recidiva
+Recombinante
+Recuento de linfocitos CD4
+Red de Ensayos de Vacunas contra el VIH (HVTN) F
+Red de Ensayos sobre la Prevención del VIH (HPTN)
+Red de Ensayos sobre Microbicidas (MTN)
+Red Internacional de Iniciativas Estratégicas en
+Ensayos Mundiales sobre el VIH (INSIGHT)
+Red Nacional de Información sobre Prevención
+C Red Nacional de Información sobre Prevención
+de los Centros para el Control y la Prevención de
+Enfermedades (CDC-NPIN)
+I Reducción vírica
+Reexposición
+Refuerzo
+Régimen ahorrador de inhibidores de la proteasa
+Régimen ahorrador de ITIN
+Régimen ahorrador de ITINN
+Régimen ahorrador de un medicamento de
+determinada clase
+Régimen de tratamiento
+Registro del uso de medicamentos antirretrovirales
+durante el embarazo
+Relación dosis-respuesta
+Remisión I
+Renal
+Reproducir
+Reservorio
+Reservorio de VIH latente
+I Resistencia a la insulina
+Resistencia a los medicamentos
+Resistencia adquirida
+Resistencia cruzada
+Resistencia primaria
+Resistencia secundaria I
+Resistencia transmitida K
+Resistente N
+Resonancia magnética nuclear (RMN)
+Respuesta humoral
+Respuesta inmunitaria
+Respuesta inmunitaria humoral
+Respuesta inmunitaria subóptima
+D Respuesta linfoproliferativa
+Resultado de la prueba negativo
+Resultado de la prueba no reactivo
+Resultado de la prueba positivo
+Resultado de la prueba reactivo
+Resultado negativo falso
+Resultado negativo verdadero
+Resultado positivo falso
+Resultado positivo verdadero
+Retina I
+Retinitis
+Retinitis causada por citomegalovirus
+Retinitis por CMV
+Retrovirus
+Reumatismo del desierto
+Revestimiento entérico
+Riñones
+Salmonella
+Sarcoma de Kaposi (KS)
+Semen
+Semivida (t )
+Sensibilidad
+Sensibilidad a la insulina
+Sensibilidad cruzada
+Separación de los espermatozoides del líquido seminal
+Septicemia
+Septicemia causada por Salmonella
+Seroconversión R
+Seroprevalencia V
+Servicio de Salud de los Indígenas (IHS)
+Shigelosis
+K Sífilis
+Simplificación del régimen
+Simplificación del tratamiento
+Sincicio
+Síndrome
+Síndrome consuntivo
+Síndrome de emaciación
+Síndrome de Fanconi
+Síndrome de Guillain-Barré
+Q Síndrome de HELLP
+Síndrome de hipersensibilidad
+Síndrome de hipersensibilidad a los medicamentos
+Síndrome de inmunodeficiencia adquirida (SIDA)
+Síndrome de lipodistrofia
+Síndrome de mala absorción
+I Síndrome de reconstitución inmunitaria
+K Síndrome de Stevens-Johnson
+Síndrome inflamatorio de reconstitución inmunitaria
+Síndrome metabólico
+Síndrome X
+Sinergia medicamentosa
+Sistema de clasificación de Child-Turcotte-Pugh
+Sistema de vigilancia de la medicación
+Sistema del antígeno leucocitario humano
+Sistema genitourinario
+Sistema inmunitario
+O Sistema linfático
+T Sistema nervioso central (SNC)
+Sistema nervioso periférico (SNP)
+Sistémico F
+Situación inicial
+Solicitud de autorización de un nuevo medicamento
+Solicitud de autorización de un nuevo medicamento
+en fase de investigación clínica
+Somatotropina humana
+I Subcutáneo
+Subtipo
+Suero
+Superinfección
+Talaromicosis
+Taquicardia
+Taquipnea
+Tejido adiposo subcutáneo
+Tejido adiposo visceral
+Terapia de base optimizada (TBO)
+Terapia genética
+Teratógeno
+Testosterona
+TID
+I Timo
+Título
+Tolerancia
+Torulosis
+Toxicidad
+Toxicidad causada por medicamentos
+Toxicidad medicamentosa G
+Toxicidad mitocondrial I
+Toxoplasmosis
+Transaminasa glutámico-oxalacética sérica V
+Transaminasa glutámico-pirúvica sérica
+Transcripción inversa
+K Transcriptasa inversa
+Q Transmisión
+Transmisión de madre a niño
+Transmisión horizontal
+Transmisión maternoinfantil (TMI)
+Transmisión perinatal
+Transmisión secundaria
+Transmisión sexual
+Transmisión vertical
+Transplacentario
+Trastorno autoinmunitario
+Trastornos hemorrágicos
+N Trastornos neurocognoscitivos relacionados con el VIH
+R Tratamiento antirretroviral (TAR)
+Tratamiento antirretroviral de gran actividad
+Tratamiento antirretroviral mixto
+Tratamiento autoadministrado
+Tratamiento como prevención (TasP)
+Tratamiento de fondo optimizado
+Tratamiento de mantenimiento
+Tratamiento de primera línea
+Tratamiento de referencia
+I Tratamiento de rescate
+K Tratamiento de salvamento
+P Tratamiento directamente observado (DOT)
+Tratamiento directamente observado modificado
+(m-DOT)
+Tratamiento estándar
+Tratamiento génico G
+Tratamiento inmunomodulador I
+Tratamiento simulado
+Triglicéridos
+Tripanosomiasis americana
+Trombocitopenia
+Trombocitopenia inmunitaria
+Tropismo
+Tropismo vírico
+Tuberculosis (TB)
+Tuberculosis extremadamente resistente (TB-XDR)
+Tuberculosis polifarmacorresistente (TB-MDR)
+Tuberculosis ultrarresistente M
+Úlcera bucal
+Urianálisis
+Urolitiasis
+G Urticaria
+Uso de drogas inyectables
+Uso extraoficial
+Uso oficial
+Uso para una indicación no autorizada F
+Uso para una indicación no recogida en la ficha
+técnica
+Uso tópico
+Vacuna
+Vacuna de células dendríticas
+Vacuna multivalente
+Vacuna polivalente
+Vacuna preventiva contra el VIH
+Vacuna terapéutica contra el VIH
+Vacunación
+Valor
+Valor cuantitativo
+Valor de referencia
+Valor inicial N
+Vector P
+Verrugas genitales
+Verrugas venéreas
+G Vías genitourinarias
+I VIH con tropismo mixto
+VIH-1
+VIH-2
+Viremia
+Viricida
+Virología
+Virus
+Virus con tropismo D/M
+Virus con tropismo doble
+Virus con tropismo doble/mezclado
+U Virus con tropismo doble/mixto
+Virus con tropismo para macrófago
+Virus con tropismo para R5
+Virus con tropismo para X4
+Virus de Epstein-Barr (VEB)
+Virus de inmunodeficiencia de los simios (VIS)
+F Virus de la
+inmunodeficiencia
+humana (VIH)
+Virus de la varicela zóster (VVZ)
+Virus del herpes
+Virus del herpes humano F
+Virus del herpes humano 3 (VHH-3)
+Virus del herpes humano 4 (VHH-4)
+Virus del herpes humano 8 (VHH-8)
+Virus del herpes relacionado con el sarcoma de Kaposi
+Virus del papiloma humano (VPH) S
+Virus del tipo silvestre
+Virus linfotrópico humano de los linfocitos T, tipo 1
+(HTLV-1)
+Virus M-trópico
+Virus tipo salvajae
+R Virus T-trópico
+Vivo atenuado
+Western blot
