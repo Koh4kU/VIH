@@ -27,14 +27,20 @@ for directory in os.listdir("./resources/dataset"):
         if file.endswith(".txt") or file.endswith(".json") or file.endswith(".csv"):
 
             with open("./resources/dataset/" + directory + "/" + file, encoding="utf-8") as f:
-                string_temp = f.read()
+                string_temp = f.read().lower()
+                trans_table2 = string_temp.maketrans(replace_from, replace_to)
+                string_cases = string_temp.translate(trans_table)
             for z in string_list:
-                if (z in string_temp):
-                    res1 += 1
+                if (z in string_cases):
+                    if("vih" in z or "sida" in z):
+                        res1+=5
+                    else:
+                        res1 += 1
+                    print(f"({file}, {res1}, {directory})")
+                    print("Matcheo-> "+z+" <-")
             if (res1 >= 10):
                 res2 += 1
 
-            #print(f"({file}, {res1}, {directory})")
             res1 = 0
     result.append(res2)
     res2 = 0
