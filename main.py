@@ -31,11 +31,12 @@ for directory in os.listdir("./resources/dataset"):
                 trans_table2 = string_temp.maketrans(replace_from, replace_to)
                 string_cases = string_temp.translate(trans_table)
             for z in string_list:
-                if (z in string_cases):
-                    if("vih" in z or "sida" in z):
-                        res1+=5
-                    else:
-                        res1 += 1
+                if (z in string_cases and ("vih" in z or "sida" == z or "hiv" == z)):
+                    res1+=10
+                    print(f"({file}, {res1}, {directory})")
+                    print("Matcheo-> " + z + " <-")
+                elif z in string_cases:
+                    res1 += 1
                     print(f"({file}, {res1}, {directory})")
                     print("Matcheo-> "+z+" <-")
             if (res1 >= 10):
@@ -44,11 +45,15 @@ for directory in os.listdir("./resources/dataset"):
             res1 = 0
     result.append(res2)
     res2 = 0
-print("Con VIH: "+ str(result))
-print("Total arhcivos:" +str(total))
+#print("Con VIH: "+ str(result))
+#print("Total arhcivos: " +str(total))
 
 for i in range(0,4):
-    percentaje.append("%.2f" % ((result[i] * 100) / total[i]))
+    if i == 0:
+        no_vih=100-((result[i] * 100) / total[i])
+        percentaje.append("%.2f" % no_vih)
+    else:
+        percentaje.append("%.2f" % ((result[i] * 100) / total[i]))
 print("Porcentaje: "+str(percentaje))
 
 

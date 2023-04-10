@@ -188,15 +188,11 @@ Hipogammaglobulinemia
 Hipogonadismo
 Hipoxia
 Histoplasmosis
-Hongo
 HSH
 HSHM
 Ictericia
 Ictericia nuclear
 Idiopático
-In utero
-In vitro
-In vivo
 Infección aguda por el VIH
 Infección crónica por el VIH
 Infección de transmisión sexual
@@ -227,7 +223,6 @@ análogo de los nucleótidos
 Inhibidor de la transcriptasa inversa no análogo de los nucleósidos
 ITINN
 Inhibidor de la transferencia de cadenas de la integrasa
-INSTI
 Inhibidor de Rev
 Inhibidores de CYP3A
 Inhibidores de la entrada
@@ -290,7 +285,6 @@ Meningitis
 Mialgia
 Micosis
 Microbicida
-Microbio
 Microglobulina beta-2
 Microsporidiosis
 Mielina
@@ -385,7 +379,7 @@ Síndrome de HELLP
 Síndrome de hipersensibilidad
 Síndrome de hipersensibilidad a los medicamentos
 Síndrome de inmunodeficiencia adquirida
-SIDA
+SIDA (+)
 Síndrome de lipodistrofia
 Síndrome de mala absorción
 Síndrome de reconstitución inmunitaria
@@ -427,7 +421,7 @@ Virus con tropismo para X4
 Virus de Epstein-Barr
 Virus de inmunodeficiencia de los simios
 Virus de la inmunodeficiencia humana
-VIH
+VIH (+)
 Virus de la varicela zóster
 VVZ
 Virus del herpes humano 3
@@ -442,3 +436,10 @@ Virus linfotrópico humano de los linfocitos T
 HTLV-1
 Virus M-trópico
 Virus T-trópico
+hiv
+SIDA
+infección por VIH
+VIH positivo
+VIH connatal
+por VIH
+debido a VIH
