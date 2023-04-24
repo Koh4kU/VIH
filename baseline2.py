@@ -5,7 +5,7 @@ files=[[],[],[],[]]
 percentaje=[]
 total=[]
 diccionario=""
-with open("./resources/diccionario.txt", encoding="utf-8") as dic:
+with open("resources/diccionario2.txt", encoding="utf-8") as dic:
     diccionario=dic.read()
 replace_from="áéíóúÁÉÍÓÚ"
 replace_to="aeiouAEIOU"
@@ -31,15 +31,11 @@ for directory in os.listdir("./resources/dataset"):
                 trans_table2 = string_temp.maketrans(replace_from, replace_to)
                 string_cases = string_temp.translate(trans_table)
             for z in string_list:
-                if (z in string_cases and ("vih" in z or "sida" == z or "hiv" == z)):
-                    res1+=10
-                    print(f"({file}, {res1}, {directory})")
-                    print("Matcheo-> " + z + " <-")
-                elif z in string_cases:
+                if z in string_cases:
                     res1 += 1
-                    print(f"({file}, {res1}, {directory})")
-                    print("Matcheo-> "+z+" <-")
-            if (res1 >= 10):
+                    #print(f"({file}, {res1}, {directory})")
+                    #print("Matcheo-> "+z+" <-")
+            if (res1 >= 7):
                 res2 += 1
 
             res1 = 0
@@ -48,13 +44,20 @@ for directory in os.listdir("./resources/dataset"):
 #print("Con VIH: "+ str(result))
 #print("Total arhcivos: " +str(total))
 
+media=0
 for i in range(0,4):
     if i == 0:
         no_vih=100-((result[i] * 100) / total[i])
         percentaje.append("%.2f" % no_vih)
+        media+=no_vih
     else:
         percentaje.append("%.2f" % ((result[i] * 100) / total[i]))
-print("Porcentaje: "+str(percentaje))
+        media+=((result[i] * 100) / total[i])
+media=media/4
+print(f"""Porcentaje correcto: {percentaje} \tMedia: {"%.2f" % media}""")
+print(f"""Falsos positivos: {"%.2f" % (100-float(percentaje[0]))}""")
+print(f"""Falsos negativos: {"%.2f" % (100-((float)(percentaje[1])+(float)(percentaje[2])+(float)(percentaje[3]))/3)}""")
+
 
 
 

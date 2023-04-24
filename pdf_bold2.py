@@ -9,7 +9,7 @@ with pdfplumber.open('resources/Glossary-Spanish-HIVinfo.pdf') as pdf:
         final_text=bold_text.extract_text().split("\n")
         for j in final_text:
             if "VEA:" not in j and "SINÓNIMO(S):" not in j and j not in "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ" and not j.isnumeric():
-                with open("resources/diccionario.txt", "a", encoding="utf-8") as f:
+                with open("resources/diccionario1.txt", "a", encoding="utf-8") as f:
                     f.write(j)
                     f.write("\n")
 

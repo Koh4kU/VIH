@@ -1,0 +1,424 @@
+﻿Sudores
+Escalofrios
+Fiebre recurrente
+Diarrea cronica
+Ganglios linfaticos inflamados
+Manchas blancas persistentes
+lesiones inusuales en la boca
+lesiones inusuales en la lengua
+Fatiga persistente
+Debilidad
+Perdida de peso
+Erupciones cutaneas
+bultos
+linfocitos T CD4
+Pneumocystis carinii
+Candidiasis
+Tuberculosis
+Citomegalovirus
+Meningitis criptococica
+Toxoplasmosis
+Linfoma
+Sarcoma de kaposi
+Sindrome consuntivo
+Complicaciones neurologicas
+Enfermedad renal
+Enfermedad hepáticaAcantosis pigmentaria
+Acceso ampliado
+Accidente cerebrovascular
+Adyuvante
+Afección característica del SIDA
+Afta
+Agammaglobulinemia
+Agotamiento de los linfocitos T
+Agranulocitopenia
+Alanina-aminotransferasa
+Aminoácidos
+polimerasa con transcriptasa inversa
+RT-PCR
+Antagonismo medicamentoso
+Antagonista de CCR5
+Antagonista de CXCR4
+Anticuerpos ampliamente neutralizantes
+Arritmia
+Arterioesclerosis
+Arteriopatía coronaria
+Artralgia
+Asesoramiento sobre el VIH
+Aspartato aminotransferasa
+Aspergilosis
+Astenia
+Ataque cardíaco
+Ataxia
+Atención paliativa
+Ateroesclerosis
+Aterosclerosis
+Bartonelosis
+Bilirrubina
+Bloqueador de receptor CCR5
+Broncoespasmo
+Bronconeumonía
+Broncoscopia
+Cambios en la constitución
+Campilobacteriosis
+Cáncer cervicouterino
+Cáncer del cuello uterino
+Cáncer relacionado con el SIDA
+Candidiasis
+Candidiasis oral
+Cápside
+Caquexia
+Cardiomiopatía
+Cardiopatía coronaria
+Cascada de tratamiento del VIH
+Célula CD4
+Célula dendrítica
+Célula presentadora de antígenos
+Célula T CD4
+Chancro blando
+Chancroide
+Cistoisosporiasis
+Citocina
+Citocromo P450
+CYP450
+Citocromo P450 3A4
+CYP3A4
+Citomegalovirus
+Citopenia
+Citotóxico
+Clade
+Clamidia
+Coagulopatía
+Coccidioidomicosis
+Fiebre del Valle
+Reumatismo del desierto
+Cohorte
+Colangiopatía
+Colitis
+Comorbilidad
+Complejo ALH
+Complejo del antígeno leucocitario humano
+Complejo inmunitario
+Concentrado de inmunoglobulinas de administración intravenosa
+Condiloma acuminado
+Crioablación
+Criptococosis
+Criptosporidio
+Criptosporidiosis
+Cristaluria
+Cuello de bisonte
+CXCR4
+Demencia relacionada con el VIH
+Dermatitis seborreica
+Desensibilización
+Deterioro cognitivo
+Diabetes mellitus
+Diseminada
+Dislipidemia
+Disminución del número de leucocitos T
+Disnea
+Displasia
+Disritmia cardíaca
+DAIDS
+Encefalitis
+úlceras genitales
+Enfermedad de transmisión sexual
+Enfermedad inflamatoria de la pelvis
+Enfermedad tuberculosa
+Entérico
+Enteritis
+Eosinofilia
+Epitelio
+Epítopo
+Equimosis
+Eritema gingival lineal
+Eritema multiforme
+Eritrocito
+Escalofrío
+Esplenomegalia
+Estado de desempeño de Karnofsky
+Esteatosis hepática
+Estomatitis
+Fiebre del Valle
+Fiebre del Valle de San Joaquín
+Fluido seminal
+Foliculitis eosinófila
+Fosfatasa alcalina
+Fotosensibilidad
+Frotis de Pap
+Frotis de Papanicolaou
+Gammaglobulina
+Gamma-glutamil transpeptidasa
+Gamma-glutamil-transferasa
+Ganglios linfáticos
+Giba de búfalo
+Gingivitis
+Glucoproteína 120
+Glucoproteína 160
+Glucoproteína 41
+Gonorrea
+gp120
+gp160
+gp41
+Hematocrito
+Hematotóxico
+Hematuria
+Hemivida
+Hepático
+Hepatitis
+Hepatomegalia
+Hepatopatía terminal
+Hepatotoxicidad
+Herpes zóster
+Hiperadiposidad
+Hiperbilirrubinemia causada por excipientes
+Hipergammaglobulinemia
+Hiperglucemia
+Hiperlipidemia
+Hiperplasia
+Hipersensibilidad
+Hipertensión
+Hipertrigliceridemia
+Hiperuricemia
+Hipogammaglobulinemia
+Hipogonadismo
+Hipoxia
+Histoplasmosis
+HSH
+HSHM
+Ictericia
+Ictericia nuclear
+Idiopático
+Infección de transmisión sexual
+Infección oportunista
+Infección por el complejo Mycobacterium avium
+Infección por el virus de la hepatitis B
+VHB
+Infección por el virus de la hepatitis C
+VHC
+Infección por el virus del herpes simple 1
+VHS-1
+Infección por el virus del herpes simple 2
+VHS-2
+Infección por Mycobacterium kansasii
+Infección por Penicillium marneffei
+Infección por Streptococcus Pneumoniae
+Infección por Talaromyces marneffei
+Infección tuberculosa latente
+Inhibidor CCR5
+Inhibidor de la fijación
+Inhibidor de la fusión
+Inhibidor de la integrasa
+Inhibidor de la proteasa
+Inhibidor de la transcriptasa inversa
+análogo de los nucleósidos
+ITIN
+análogo de los nucleótidos
+Inhibidor de la transcriptasa inversa no análogo de los nucleósidos
+ITINN
+Inhibidor de la transferencia de cadenas de la integrasa
+Inhibidor de Rev
+Inhibidores de CYP3A
+Inhibidores de la entrada
+Inhibidores posfijación
+Inmunocompetente
+Inmunocomplejo
+Inmunodeficiencia
+Inmunodepresión
+Inmunodeprimido
+Inmunogenia
+Inmunoglobulina
+Inmunoglobulina intravenosa
+IGIV
+Inmunomoduladores
+Inoculación
+Inseminación artificial
+Inseminación intrauterina
+Integrasa
+Interacción medicamentosa
+Interferón
+IFN
+Interleucina-2
+IL-2
+Interleucina-7
+IL-7
+Inyección intracitoplásmica de espermatozoides
+Isosporiasis
+Isquemia
+Kernícterus
+Leishmaniasis
+Lentivirus
+Leucocitosis
+Leucoencefalopatía multifocal progresiva
+Leucopenia
+Leucoplasia vellosa bucal
+Linfadenodapía generalizada persistente
+Linfadenopatía
+Linfocito B
+Linfocito CD4
+Linfocito CD8
+Linfocito citolítico natural
+Linfocito T
+Linfocito T CD4
+Linfocito T CD8
+Linfocito T citotóxico D
+Linfocito T cooperador
+Linfocito T inhibidor
+Linfocito T regulador
+Linfogranuloma venéreo
+Linfoma de Burkitt
+Linfoma de Hodgkin
+Linfoma de los linfocitos B
+Linfoma no hodgkiniano
+Linfopenia
+Lipohipertrofia
+Lipoma
+Macrófago
+Mastocito
+Meningitis
+Mialgia
+Micosis
+Microbicida
+Microglobulina beta-2
+Microsporidiosis
+Mielina
+Mielodepresión
+Mielopatía vacuolar
+Miocardiopatía
+Miodinia
+Mioneuralgia
+Miopatía de bastones
+Miopatía nemalínica
+Miopatía filamentosa
+Monocito maduro de la sangre periférica
+Mononeuropatía
+Mycobacterium tuberculosis
+Navigación de la profilaxis preexposición
+Necrólisis epidérmica tóxica
+Necrosis avascular
+Necrosis hepática
+Nefritis
+Nefritis intersticial
+Nefrolitiasis
+Nefropatía terminal
+Nefrotóxico
+Neogenética
+Neumocistosis
+Neumonía por Pneumocystis carinii
+Neumonía por Pneumocystis jirovecii
+Neumonitis intersticial linfocítica
+Neumonitis intersticial linfoide
+Neuropatía periférica
+Neuropatía sensitiva distal
+Neuropatía tóxica causada por antirretrovirales
+Neutrófilo
+Neutropenia
+Osteonecrosis
+Osteopenia
+Osteoporosis
+p24
+Pancitopenia
+Pancreatitis
+Papiloma
+Patogenia
+Peniciliosis
+Péptido
+Polineuritis
+Polineuropatía
+Polineuropatía desmielinizante inflamatoria aguda
+Polineuropatía desmielinizante inflamatoria crónica
+Proctitis
+Pródromo
+Profiláctico
+Profilaxis
+Profilaxis posexposición
+Profilaxis posexposición no ocupacional
+Profilaxis posexposición ocupacional
+Profilaxis post exposición no ocupacional
+Profilaxis postexposición
+Profilaxis preexposición
+Profilaxis primariaPrurito
+Puerperio
+Pulmonía intersticial linfoide
+Punción lumbar
+Puntuación de Child-Pugh
+Puntuación de Karnofsky
+Púrpura trombocitopénica idiopática
+Púrpura trombocitopénica inmunitaria
+Rabdomiólisis
+Reacción de hipersensibilidad
+Receptor 4 de quimiocina C-X-C
+Receptor 5 de quimiocina C-C
+Receptor 5 de quimiocina cisteína-cisteína
+Receptor de CD4
+Recidiva
+Reservorio de VIH latente
+Respuesta inmunitaria subóptima
+Respuesta linfoproliferativa
+Retinitis causada por citomegalovirus
+Retinitis por CMV
+Reumatismo del desierto
+Revestimiento entérico
+Sarcoma de Kaposi
+Septicemia
+Septicemia causada por Salmonella
+Shigelosis
+Sífilis
+Síndrome consuntivo
+Síndrome de emaciación
+Síndrome de Fanconi
+Síndrome de Guillain-Barré
+Síndrome de HELLP
+Síndrome de hipersensibilidad
+Síndrome de hipersensibilidad a los medicamento
+Síndrome de lipodistrofia
+Síndrome de mala absorción
+Síndrome de reconstitución inmunitaria
+Síndrome de Stevens-Johnson
+Síndrome inflamatorio de reconstitución inmunitaria
+Síndrome metabólico
+Síndrome X
+Sinergia medicamentosa
+Somatotropina humana
+Talaromicosis
+Taquipnea
+Torulosis
+Toxoplasmosis
+Transaminasa glutámico-oxalacética sérica
+Transaminasa glutámico-pirúvica sérica
+Transcriptasa inversa
+Trastorno autoinmunitario
+Trastornos hemorrágicos
+Trastornos neurocognoscitivos relacionados con el VIH
+Triglicéridos
+Tripanosomiasis americana
+Trombocitopenia
+Trombocitopenia inmunitaria
+Úlcera bucal
+Urolitiasis
+Urticaria
+Verrugas genitales
+Verrugas venéreas
+Virus con tropismo D/M
+Virus con tropismo doble
+Virus con tropismo doble/mezclado
+Virus con tropismo doble/mixto
+Virus con tropismo para macrófago
+Virus con tropismo para R5
+Virus con tropismo para X4
+Virus de Epstein-Barr
+Virus de inmunodeficiencia de los simios
+Virus de la varicela zóster
+VVZ
+Virus del herpes humano 3
+VHH-3
+Virus del herpes humano 4
+VHH-4
+Virus del herpes humano 8
+VHH-8
+Virus del herpes relacionado con el sarcoma de Kaposi
+Virus del papiloma humano
+Virus linfotrópico humano de los linfocitos T
+HTLV-1
+Virus M-trópico
+Virus T-trópico
