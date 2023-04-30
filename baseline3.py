@@ -32,6 +32,14 @@ def baseline3():
     list_infAgudaTokenized = tokenize(list_infAgudaTuple, stop_words, spanish_stemmer)
     #print(list_infAgudaTokenized)
 
+    formatted_enfSexual = formatDicc(enfSexuales)
+    list_enfSexualTuple = formatList(formatted_enfSexual)
+    list_enfSexualTokenized = tokenize(list_enfSexualTuple, stop_words, spanish_stemmer)
+
+    list_socioDemograficoTuple=formatList(sociodemografico)
+    list_socioDemograficoTokenized=tokenize(list_socioDemograficoTuple, stop_words, spanish_stemmer)
+    #print(list_socioDemograficoTokenized)
+
     string_stemmed=""
     total = 0
     total_list=[]
@@ -67,9 +75,22 @@ def baseline3():
                 else:
                     temp = 0
                     prob = 0
-                    prob = getProb(list_indicatoriosTokenized, string_stemmed)
-                    prob += getProb(list_infAgudaTokenized, string_stemmed)
-                    if prob > 10:
+                    prob = getProb(list_indicatoriosTokenized, string_stemmed, spanish_stemmer, prob)
+                    prob += getProb(list_infAgudaTokenized, string_stemmed, spanish_stemmer, prob)
+                    prob += getProb(list_enfSexualTokenized, string_stemmed, spanish_stemmer, prob)
+                    #Sociodemográficos, diferente algoritmo
+                    range_temp=""
+                    range1=0
+                    range2=0
+                    for tuple in list_socioDemograficoTokenized:
+                        range_temp=tuple[0][0]
+                        range1=(int)(range_temp[0:2])
+                        range2=(int)(range_temp[0:2])
+                        if tuple[0] == "50":
+                            prob+=tuple[1]
+                        elif str(range(range1, range2)) in string_stemmed and tuple[0][1] in string_stemmed:
+                            prob+=tuple[1]
+                    if prob > 20:
                         total += 1
                 string_stemmed=""
                 #print(f"""Total {file}-> {total}""")
@@ -122,19 +143,29 @@ def tokenize(t, stop_words, spanish_stemmer):
         list_stemmed=[]
     return list_tokenized
 
-def getProb(list, string_stemmed):
+def getProb(list, string_stemmed, spanish_stemmer, prob):
     temp=0
-    prob=0
     for tuple in list:
         for i in tuple[0]:
+            #Caso especial infeccionAguda
             if i in string_stemmed:
                 temp += 1
                 if temp == len(tuple[0]):
+                    if (i == ['fatig', 'malest', 'asteni'] or i == ['cefale']
+                        or i == ['linfadenopati', 'perifer', 'adenopati'] or i == ['faringitis']
+                        or i == ['alter', 'gastrointestinal', 'diarre'] or i == ['mononucleosis']
+                        or i == ['sindrom', 'mononucle', 'fiebr', 'adenopati', 'mialgi']) and (
+                        spanish_stemmer.stem("linfopenia")) + " <500" in string_stemmed:
+
+                        prob+=1
+
+                    elif (spanish_stemmer.stem("Leucopenia") in string_stemmed
+                        and spanish_stemmer.stem("Trombopenia") in string_stemmed):
+                        prob+=1
+
                     prob += (float)(tuple[1])
                     break
-            elif i in string_stemmed and "" == "":
-                # Casos especiales de indicatorias
-                """HOLa"""
+
     return prob
 if __name__== "__main__":
     baseline3()
