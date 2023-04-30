@@ -1,16 +1,40 @@
-Neumonía recurrente (≥2 NAC bacterianas durante 12 meses).
+Neumonía recurrente (≥2 NAC bacterianas durante 12 meses)
 4.2
 Bacteriemia recurrente por Salmonella
 4.5
-Tuberculosis pulmonar o extrapulmonar (ganglionar, ósea, intestinal, diseminada, meníngea, cerebral).
+Tuberculosis pulmonar o extrapulmonar
+4.5
+Tuberculosis ganglionar
+4.5
+Tuberculosis ósea
+4.5
+Tuberculosis intestinal
+4.5
+Tuberculosis diseminada
+4.5
+Tuberculosis meníngea
+4.5
+Tuberculosis cerebral
 4.5
 Tuberculosis miliar
 4.8
-Micobacterias atípicas diseminadas o extrapulmonares (Mycobacterium avium, Mycobacterium kansasii)
+Micobacterias atípicas diseminadas o extrapulmonares
 4.8
-Candidiasis esofágica, bronquial, traqueal o pulmonar
+Mycobacterium avium
+4.8
+Mycobacterium kansasii
+4.8
+Candidiasis esofágica
 4.5
-Neumonía por Pneumocystis jirovecii, Pneumocystis carinii
+Candidiasis bronquial
+4.5
+Candidiasis traqueal
+4.5
+Candidiasis pulmonar
+4.5
+Neumonía por Pneumocystis jirovecii
+5.0
+Pneumocystis carinii
 5.0
 Histoplasmosis extrapulmonar
 4.8
@@ -20,9 +44,25 @@ Criptococosis extrapulmonar
 4.8
 Criptosporidiosis
 4.8
-Infecciones por virus del herpes simple: ulceras crónicas, bronquitis, neumonía o esofagitis
+Infecciones por virus del herpes simple
 4.3
-Infecciones por citomegalovirus (retinitis por CMV, hepática, esplénica, ganglionar)
+Ulceras crónicas
+4.3
+Bronquitis
+4.3
+Neumonía
+4.3
+Esofagitis
+4.3
+Infecciones por citomegalovirus
+4.7
+Retinitis por CMV
+4.7
+Infección hepática
+4.7
+Infección esplénica
+4.7
+Infección ganglionar
 4.7
 Toxoplasmosis  cerebral
 4.8
@@ -30,7 +70,11 @@ Leucoencefalopatía multifocal progresiva
 4.7
 Sarcoma de Kaposi
 5.0
-Linfomas (de Burkitt, cerebral primario, inmunoblásticos)
+Linfomas de Burkitt cerebral
+4.8
+Linfoma cerebral primario
+4.8
+Linfomas inmunoblásticos
 4.8
 Carcinoma de cérvix uterino invasivo
 4.5
