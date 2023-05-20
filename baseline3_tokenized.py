@@ -56,7 +56,7 @@ def baseline3():
                 #print(tokenized)
                 for tokens in tokenized:
                     if tokens not in stop_words:
-                        string_stemmed+=spanish_stemmer.stem(tokens)+ " "
+                        string_stemmed+=spanish_stemmer.stem(tokens)+" "
                 #print(list_stemmed)
                 #print(string_stemmed)
                 #Todo el tocho de código para comparar los diccionarios con el txt
@@ -87,14 +87,20 @@ def baseline3():
                     range_temp=""
                     range1=0
                     range2=0
-                    for tuple in list_socioDemograficoTokenized:
-                        range_temp=tuple[0][0]
-                        range1=(int)(range_temp[0:2])
-                        range2=(int)(range_temp[0:2])
-                        if tuple[0] == "50":
-                            prob+=tuple[1]
-                        elif str(range(range1, range2)) in string_stemmed and tuple[0][1] in string_stemmed:
-                            prob+=tuple[1]
+                    for tuple in list_socioDemograficoTuple:
+
+                        if "50" in tuple[0]:
+                            for i in range(50,100):
+                                if str(i)+" años" in string_formatted:
+                                    prob += float(tuple[1])
+                        elif "50" not in tuple[0]:
+                            range_temp = tuple[0]
+                            range1 = (int)(range_temp[0:2])
+                            range2 = (int)(range_temp[3:5])
+                            for i in range(range1, range2):
+                                if str(i) + " años" in string_formatted:
+                                    prob += float(tuple[1])
+                                    break
                     if prob > 7:
                         total += 1
                 string_stemmed=""
@@ -156,13 +162,13 @@ def getProb(list, string_stemmed, spanish_stemmer):
             #print(string_stemmed)
             if(temp_string == 'fatigmalestasteni' or temp_string == 'cefale'
                         or temp_string == 'linfadenopatiperiferadenopati' or temp_string == 'faringitis'
-                        or temp_string == 'altergastrointestinal', 'diarre' or temp_string == 'mononucleosis'
+                        or temp_string == 'altergastrointestinaldiarre' or temp_string == 'mononucleosis'
                         or temp_string == 'sindrommononuclefiebradenopatimialgi') and (
-                        spanish_stemmer.stem("linfopenia")) + "<500" in string_stemmed:
+                        spanish_stemmer.stem("linfopenia")) + " <500" in string_stemmed:
                 prob+=1
 
-            elif (spanish_stemmer.stem("Leucopenia") in string_stemmed
-                        and spanish_stemmer.stem("Trombopenia") in string_stemmed):
+            elif (spanish_stemmer.stem("leucopenia") in string_stemmed
+                        and spanish_stemmer.stem("trombopenia") in string_stemmed):
                 prob+=1
             prob += (float)(tuple[1])
 
