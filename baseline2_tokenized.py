@@ -100,10 +100,7 @@ def tokenize_string(t, stop_words, spanish_stemmer):
     list_stemmed=[]
     tokenized=nltk.tokenize.word_tokenize(t)
     for j in tokenized:
-        if j in stop_words:
-                #print(f"""Token-> {j}""")
-            tokenized.remove(j)
-        else:
+        if j not in stop_words:
             list_stemmed.append(spanish_stemmer.stem(j))
                 #print(f"""Stemm-> {j}""")
         #print(list_stemmed)
