@@ -79,7 +79,6 @@ def bestModel(resultDataset):
 def datasetLoadFile():
     dataset = datasets.load_files("./resources/dataset/", encoding="utf-8", allowed_extensions=[".txt"],
                                   random_state=42)
-
     x = dataset.data
     y = dataset.target
 
