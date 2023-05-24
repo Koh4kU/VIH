@@ -220,8 +220,8 @@ def vectorize(x, y, vectorizer, flag):
 
 
     x_train, x_test, y_train, y_test = train_test_split(list_x, y, test_size=0.4, train_size=0.6, random_state=45, stratify=y)
-    #print(y_test)
-    #print(x_train)
+    print(len(list_x))
+    print(len(y))
 
 
     x_train_count = vectorizer.fit_transform(x_train)

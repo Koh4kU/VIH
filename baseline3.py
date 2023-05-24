@@ -65,10 +65,14 @@ def baseline3():
                     #print(f'''Dir-> {directory}\t File-> {file}\tProb->{prob}\n\n''')
                     prob = getProb(list_indicatoriosTuple, string_formatted)
                     #print(f'''ProbInd->{prob}\n\n''')
-                    prob += getProb(list_infAgudaTuple, string_formatted)
                     #print(f'''ProbAguda->{prob}\n\n''')
                     prob += getProb(list_enfSexualTuple, string_formatted)
                     #print(f'''ProbSex->{prob}\n\n''')
+
+                    # Solo comprobar las infecciones si hay enfermedades anteriores
+                    if prob != 0:
+                        prob += getProb(list_infAgudaTuple, string_formatted)
+
                     #Sociodemográficos, diferente algoritmo
                     range_temp=""
                     range1=0
