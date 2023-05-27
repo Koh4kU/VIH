@@ -12,9 +12,13 @@ from nltk.corpus import stopwords
 import re
 from nltk.stem import SnowballStemmer
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
+from nltk import download
+import sys
 
+from datetime import datetime
+#download()
 
-def bestModel(resultDataset):
+def bestModel(resultDataset, file):
 
 
 
@@ -77,35 +81,35 @@ def bestModel(resultDataset):
             flag_neighbors=True
             break
 
-    '''
-    print(f"""Bayes->\n{y_pred_nb}""")
-    print(f"""Regression->\n{y_pred_lrc}""")
-    print(f"""SVM->\n{y_pred_svm}""")
-    print(f"""Neighbors->\n{y_pred_knn}""")
-    print(f"""Random forest->\n{y_pred_rfc}""")
-    '''
-    if flag_bayes:
-        print(f"""\tBayes->{nb_score}""")
-        print(confusion_matrix(y_test, y_pred_nb))
-        print(classification_report(y_test, y_pred_nb))
-        print(accuracy_score(y_test, y_pred_nb))
-    print(f"""\tRegression->{lrc_score}""")
-    print(confusion_matrix(y_test, y_pred_lrc))
-    print(classification_report(y_test, y_pred_lrc))
-    print(accuracy_score(y_test, y_pred_lrc))
-    print(f"""\tSVM->{svm_score}""")
-    print(confusion_matrix(y_test, y_pred_svm))
-    print(classification_report(y_test, y_pred_svm))
-    print(accuracy_score(y_test, y_pred_svm))
-    if flag_neighbors:
-        print(f"""\tNeighbors->{knn_score}""")
-        print(confusion_matrix(y_test, y_pred_knn))
-        print(classification_report(y_test, y_pred_knn))
-        print(accuracy_score(y_test, y_pred_knn))
-    print(f"""\tRandom forest->{rfc_score}""")
-    print(confusion_matrix(y_test, y_pred_rfc))
-    print(classification_report(y_test, y_pred_rfc))
-    print(accuracy_score(y_test, y_pred_rfc))
+    print(f"""Unique nb->{set(y_test) - set(y_pred_nb)}""")
+    print(f"""Unique svm->{set(y_test) - set(y_pred_svm)}""")
+    print(f"""Unique lrc->{set(y_test) - set(y_pred_lrc)}""")
+    print(f"""Unique knn->{set(y_test) - set(y_pred_knn)}""")
+    print(f"""Unique rfc->{set(y_test) - set(y_pred_rfc)}""")
+
+    with open("./results/"+file+"NB.txt", "a") as w:
+        w.write(datetime.now().strftime("%Y-%m-%d-%H-%M")+"\n")
+        w.write(f'''Bayes->\n{y_test}\t{y_pred_nb}\t{nb_score}\n{confusion_matrix(y_test, y_pred_nb)}\n{classification_report(y_test, y_pred_nb)}\n
+        {accuracy_score(y_test, y_pred_nb)}\n''')
+    with open("./results/" + file+"LRC.txt", "a") as w:
+        w.write(datetime.now().strftime("%Y-%m-%d-%H-%M") + "\n")
+        w.write(f'''Regression->\n{y_test}\n{y_pred_lrc}\n{lrc_score}\n{confusion_matrix(y_test, y_pred_lrc)}\n{classification_report(y_test, y_pred_lrc)}\n
+        {accuracy_score(y_test, y_pred_lrc)}\n''')
+    with open("./results/" + file+"SVM.txt", "a") as w:
+        w.write(datetime.now().strftime("%Y-%m-%d-%H-%M") + "\n")
+        w.write(
+            f'''SVM->\n{y_test}\n{y_pred_svm}\n{svm_score}\n{confusion_matrix(y_test, y_pred_svm)}\n{classification_report(y_test, y_pred_svm)}\n
+                {accuracy_score(y_test, y_pred_svm)}\n''')
+    with open("./results/" + file+"KNN.txt", "a") as w:
+        w.write(datetime.now().strftime("%Y-%m-%d-%H-%M") + "\n")
+        w.write(
+            f'''Neighbors->\n{y_test}\n{y_pred_knn}\n{knn_score}\n{confusion_matrix(y_test, y_pred_knn)}\n{classification_report(y_test, y_pred_knn)}\n
+                {accuracy_score(y_test, y_pred_knn)}\n''')
+    with open("./results/" + file+"RFC.txt", "a") as w:
+        w.write(datetime.now().strftime("%Y-%m-%d-%H-%M") + "\n")
+        w.write(
+            f'''Random forest->\n{y_test}\n{y_pred_rfc}\n{rfc_score}\n{confusion_matrix(y_test, y_pred_rfc)}\n{classification_report(y_test, y_pred_rfc)}\n
+                {accuracy_score(y_test, y_pred_rfc)}\n''')
 
 
     m=0
@@ -220,8 +224,7 @@ def vectorize(x, y, vectorizer, flag):
 
 
     x_train, x_test, y_train, y_test = train_test_split(list_x, y, test_size=0.4, train_size=0.6, random_state=45, stratify=y)
-    print(len(list_x))
-    print(len(y))
+
 
 
     x_train_count = vectorizer.fit_transform(x_train)
@@ -231,19 +234,23 @@ def vectorize(x, y, vectorizer, flag):
 if __name__=="__main__":
     vectorizer1 = CountVectorizer(max_features=1500, min_df=5, max_df=0.7)
     vectorizer2 = TfidfVectorizer(max_features=1500, min_df=5, max_df=0.7)
-    print("Model1 CountVectorizer y stemmed")
+
+    #print("Model1 CountVectorizer y stemmed")
     #True si quieres la version stemmed y sin stop words
     resultDataset = datasetFileBinary(vectorizer1, True)
-    bestModel(resultDataset)
-    print("Model2 CountVectorizer y no stemmed")
+    bestModel(resultDataset, "model1")
+
+    #print("Model2 CountVectorizer y no stemmed")
     resultDataset2 = datasetFileBinary(vectorizer1, False)
-    bestModel(resultDataset2)
-    print("Model3 TfidfVectorizer y stemmed")
+    bestModel(resultDataset2, "model2")
+
+    #print("Model3 TfidfVectorizer y stemmed")
     resultDataset = datasetFileBinary(vectorizer2, True)
-    bestModel(resultDataset)
-    print("Model4 TfidfVectorizer y no stemmed")
+    bestModel(resultDataset, "model3")
+
+    #print("Model4 TfidfVectorizer y no stemmed")
     resultDataset2 = datasetFileBinary(vectorizer2, False)
-    bestModel(resultDataset2)
+    bestModel(resultDataset2, "model4")
 
 
 
