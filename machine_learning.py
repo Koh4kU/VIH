@@ -28,6 +28,8 @@ def bestModel(resultDataset, file):
     y_train=resultDataset[2]
     y_test=resultDataset[3]
 
+
+
     #Bayes
     nb_model=MultinomialNB()
     #nb_model=Pipeline(steps=[("classifier, nbClassifier")])
@@ -63,30 +65,13 @@ def bestModel(resultDataset, file):
     y_pred_rfc=rfc_model.predict(x_test_counts)
     rfc_score=rfc_model.score(x_test_counts, y_test)
 
-    #Decision tree
-
-
-    #Preprocessor
-    #("preprocessor", preprocessorForFeatures)
-    #("preprocessor", preprocessorForCategoricalColumns)
-
-    flag_bayes=False
-    flag_neighbors=False
-    for i in y_pred_nb:
-        if i ==1:
-            flag_bayes=True
-            break
-    for i in y_pred_knn:
-        if i == 0:
-            flag_neighbors=True
-            break
-
+    '''
     print(f"""Unique nb->{set(y_test) - set(y_pred_nb)}""")
     print(f"""Unique svm->{set(y_test) - set(y_pred_svm)}""")
     print(f"""Unique lrc->{set(y_test) - set(y_pred_lrc)}""")
     print(f"""Unique knn->{set(y_test) - set(y_pred_knn)}""")
     print(f"""Unique rfc->{set(y_test) - set(y_pred_rfc)}""")
-
+    '''
     with open("./results/"+file+"NB.txt", "a") as w:
         w.write(datetime.now().strftime("%Y-%m-%d-%H-%M")+"\n")
         w.write(f'''Bayes->\n{y_test}\t{y_pred_nb}\t{nb_score}\n{confusion_matrix(y_test, y_pred_nb)}\n{classification_report(y_test, y_pred_nb)}\n
@@ -190,8 +175,8 @@ def getDatasetBinary():
                 if file.endswith(".txt"):
                     with open("./resources/dataset/" + directory+"/"+file, encoding="utf-8") as f:
                         temp2+=f.read()
-                    VIH.append(temp)
-                temp=""
+                    VIH.append(temp2)
+                temp2=""
     #print(VIH)
     #print(no_VIH)
 
@@ -238,19 +223,19 @@ if __name__=="__main__":
     #print("Model1 CountVectorizer y stemmed")
     #True si quieres la version stemmed y sin stop words
     resultDataset = datasetFileBinary(vectorizer1, True)
-    bestModel(resultDataset, "model1")
+    print(f'''Model1 best->{bestModel(resultDataset, "model1")}''')
 
     #print("Model2 CountVectorizer y no stemmed")
     resultDataset2 = datasetFileBinary(vectorizer1, False)
-    bestModel(resultDataset2, "model2")
+    print(f'''Model2 best->{bestModel(resultDataset, "model2")}''')
 
     #print("Model3 TfidfVectorizer y stemmed")
     resultDataset = datasetFileBinary(vectorizer2, True)
-    bestModel(resultDataset, "model3")
+    print(f'''Model3 best->{bestModel(resultDataset, "model3")}''')
 
     #print("Model4 TfidfVectorizer y no stemmed")
     resultDataset2 = datasetFileBinary(vectorizer2, False)
-    bestModel(resultDataset2, "model4")
+    print(f'''Model4 best->{bestModel(resultDataset, "model4")}''')
 
 
 
