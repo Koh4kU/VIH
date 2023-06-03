@@ -14,9 +14,13 @@ from nltk.stem import SnowballStemmer
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 from nltk import download
 import sys
+import nltk
+import spacy
+
 
 from datetime import datetime
 #download()
+#python -m spacy download es_core_news_sm
 
 def bestModel(resultDataset, file):
 
@@ -27,7 +31,6 @@ def bestModel(resultDataset, file):
     x_test_counts=resultDataset[1]
     y_train=resultDataset[2]
     y_test=resultDataset[3]
-
 
 
     #Bayes
@@ -65,69 +68,47 @@ def bestModel(resultDataset, file):
     y_pred_rfc=rfc_model.predict(x_test_counts)
     rfc_score=rfc_model.score(x_test_counts, y_test)
 
-    '''
     print(f"""Unique nb->{set(y_test) - set(y_pred_nb)}""")
     print(f"""Unique svm->{set(y_test) - set(y_pred_svm)}""")
     print(f"""Unique lrc->{set(y_test) - set(y_pred_lrc)}""")
     print(f"""Unique knn->{set(y_test) - set(y_pred_knn)}""")
     print(f"""Unique rfc->{set(y_test) - set(y_pred_rfc)}""")
-    '''
+
     with open("./results/"+file+"NB.txt", "a") as w:
         w.write(datetime.now().strftime("%Y-%m-%d-%H-%M")+"\n")
+        w.write(f"""Random state->{RANDOM_STATE}\n""")
         w.write(f'''Bayes->\n{y_test}\t{y_pred_nb}\t{nb_score}\n{confusion_matrix(y_test, y_pred_nb)}\n{classification_report(y_test, y_pred_nb)}\n
         {accuracy_score(y_test, y_pred_nb)}\n''')
     with open("./results/" + file+"LRC.txt", "a") as w:
         w.write(datetime.now().strftime("%Y-%m-%d-%H-%M") + "\n")
+        w.write(f"""Random state->{RANDOM_STATE}\n""")
         w.write(f'''Regression->\n{y_test}\n{y_pred_lrc}\n{lrc_score}\n{confusion_matrix(y_test, y_pred_lrc)}\n{classification_report(y_test, y_pred_lrc)}\n
         {accuracy_score(y_test, y_pred_lrc)}\n''')
     with open("./results/" + file+"SVM.txt", "a") as w:
         w.write(datetime.now().strftime("%Y-%m-%d-%H-%M") + "\n")
+        w.write(f"""Random state->{RANDOM_STATE}\n""")
         w.write(
             f'''SVM->\n{y_test}\n{y_pred_svm}\n{svm_score}\n{confusion_matrix(y_test, y_pred_svm)}\n{classification_report(y_test, y_pred_svm)}\n
                 {accuracy_score(y_test, y_pred_svm)}\n''')
     with open("./results/" + file+"KNN.txt", "a") as w:
         w.write(datetime.now().strftime("%Y-%m-%d-%H-%M") + "\n")
+        w.write(f"""Random state->{RANDOM_STATE}\n""")
+
         w.write(
             f'''Neighbors->\n{y_test}\n{y_pred_knn}\n{knn_score}\n{confusion_matrix(y_test, y_pred_knn)}\n{classification_report(y_test, y_pred_knn)}\n
                 {accuracy_score(y_test, y_pred_knn)}\n''')
     with open("./results/" + file+"RFC.txt", "a") as w:
         w.write(datetime.now().strftime("%Y-%m-%d-%H-%M") + "\n")
+        w.write(f"""Random state->{RANDOM_STATE}\n""")
         w.write(
             f'''Random forest->\n{y_test}\n{y_pred_rfc}\n{rfc_score}\n{confusion_matrix(y_test, y_pred_rfc)}\n{classification_report(y_test, y_pred_rfc)}\n
                 {accuracy_score(y_test, y_pred_rfc)}\n''')
+    with open("./results/scoreAll.txt", "a") as w:
+        w.write(f"""{file} Random state->{RANDOM_STATE}\n""")
+        w.write(f"""nb_score {nb_score}\nlrc score {lrc_score}\nsvm score {svm_score}\nknn score {knn_score}\nrfc score {rfc_score}\n\n""")
 
 
-    m=0
-    m=max(nb_score, lrc_score, svm_score, knn_score, rfc_score)
-
-
-    '''
-    match max:
-        case nb_score:
-            return ("Bayes", nb_score)
-        case lrc_score:
-            return ("Regression", lrc_score)
-        case svm_score:
-            return ("SVM", svm_score)
-        case knn_score:
-            return ("Neighbors", knn_score)
-        case rfc_score:
-            return ("Random forest", rfc_score)
-    '''
-
-
-
-    if m==nb_score:
-        return ("Bayes", nb_score)
-    elif m==lrc_score:
-        return ("regression", lrc_score)
-    elif m==svm_score:
-        return ("SVM", svm_score)
-    elif m==knn_score:
-        return ("Neighbors", knn_score)
-    elif m==rfc_score:
-        return ("Random forest", rfc_score)
-
+    return (nb_score, lrc_score, svm_score, knn_score, rfc_score)
 
 
 def datasetLoadFile(vectorizer, flag):
@@ -184,31 +165,40 @@ def getDatasetBinary():
 
 def vectorize(x, y, vectorizer, flag):
     list_x = []
-    if flag:
+    if flag==1 or flag==2:
         x_proccessed=''
 
         stemmer=SnowballStemmer("spanish")
         stop_words = stopwords.words("spanish")
 
         for sen in range(0, len(x)):
+            x_proccessed = str(x[sen])
             x_proccessed = re.sub(r'\W', ' ', str(x[sen]))
             x_proccessed = re.sub(r'\s+[a-zA-Z]\s+', ' ', x_proccessed)
             x_proccessed = re.sub(r'\^[a-zA-Z]\s+', ' ', x_proccessed)
             x_proccessed = re.sub(r'\s+', ' ', x_proccessed, flags=re.I)
             x_proccessed= re.sub(r'^\s+', '', x_proccessed)
             x_proccessed = x_proccessed.lower()
-            x_proccessed = x_proccessed.split()
 
-            x_proccessed = [stemmer.stem(i) for i in x_proccessed]
-            x_proccessed = [i for i in x_proccessed if i not in stop_words]
+            if flag==2:
+                nlp=spacy.load("es_core_news_sm")
+                tagged=nlp(x_proccessed)
+                x_proccessed=[i.text for i in tagged if (i.pos_!="NOUN" or i.pos_!="ADJ")]
+                x_proccessed = [stemmer.stem(i) for i in x_proccessed]
+            else:
+                x_proccessed = x_proccessed.split()
+                x_proccessed = [stemmer.stem(i) for i in x_proccessed]
+                x_proccessed = [i for i in x_proccessed if i not in stop_words]
             x_proccessed = ' '.join(x_proccessed)
 
             list_x.append(x_proccessed)
-    else:
+    elif flag==0:
+        #print("xd")
         list_x=x
-
-
-    x_train, x_test, y_train, y_test = train_test_split(list_x, y, test_size=0.4, train_size=0.6, random_state=45, stratify=y)
+    #Proyecto de edican named entity recognition with bert
+    else:
+        "a"
+    x_train, x_test, y_train, y_test = train_test_split(list_x, y, test_size=0.4, train_size=0.6, random_state=RANDOM_STATE, stratify=y)
 
 
 
@@ -216,30 +206,119 @@ def vectorize(x, y, vectorizer, flag):
     x_test_counts = vectorizer.transform(x_test)
 
     return (x_train_count, x_test_counts, y_train, y_test)
+
+def getMax(m1):
+    SVM,NB,LRC,KNN,RFC=0,0,0,0,0
+
+    SVM += m1[2]
+    NB += m1[0]
+    LRC += m1[1]
+    KNN += m1[3]
+    RFC += m1[4]
+    max_string = ""
+    ma = max(SVM, NB, LRC, KNN, RFC)
+    if ma == SVM:
+        max_string = "SVM"
+    elif ma == NB:
+        max_string = "NB"
+    elif ma == LRC:
+        max_string = "LRC"
+    elif ma == KNN:
+        max_string = "KNN"
+    else:
+        max_string = "RFC"
+    return (max_string,ma)
+
 if __name__=="__main__":
     vectorizer1 = CountVectorizer(max_features=1500, min_df=5, max_df=0.7)
     vectorizer2 = TfidfVectorizer(max_features=1500, min_df=5, max_df=0.7)
 
-    #print("Model1 CountVectorizer y stemmed")
-    #True si quieres la version stemmed y sin stop words
-    resultDataset = datasetFileBinary(vectorizer1, True)
-    print(f'''Model1 best->{bestModel(resultDataset, "model1")}''')
+    states=[42,45,0,5]
 
-    #print("Model2 CountVectorizer y no stemmed")
-    resultDataset2 = datasetFileBinary(vectorizer1, False)
-    print(f'''Model2 best->{bestModel(resultDataset, "model2")}''')
+    SVM=0
+    NB=0
+    KNN=0
+    LRC=0
+    RFC=0
+    max_string = ""
 
-    #print("Model3 TfidfVectorizer y stemmed")
-    resultDataset = datasetFileBinary(vectorizer2, True)
-    print(f'''Model3 best->{bestModel(resultDataset, "model3")}''')
+    for i in states:
+        RANDOM_STATE=i
 
-    #print("Model4 TfidfVectorizer y no stemmed")
-    resultDataset2 = datasetFileBinary(vectorizer2, False)
-    print(f'''Model4 best->{bestModel(resultDataset, "model4")}''')
+        #print("Model1 CountVectorizer y stemmed")
+        #True si quieres la version stemmed y sin stop words
+        #0 texto plano
+        #1 texto stemmed y sin stop words
+        #2 texto solo adjetivos y nombres
+        #3 texto solo enfermedades
+    
+        resultDataset = datasetFileBinary(vectorizer1, 0)
+        m1=bestModel(resultDataset, "model1")
 
+        print(f'''Model1 best-> {i} {getMax(m1)}''')
 
+        #print("Model2 CountVectorizer y no stemmed")
+        resultDataset = datasetFileBinary(vectorizer1, 1)
+        m2=bestModel(resultDataset, "model2")
+        print(f'''Model2 best-> {i} {getMax(m2)}''')
 
+        resultDataset = datasetFileBinary(vectorizer1, 2)
+        m3=bestModel(resultDataset, "model3")
+        print(f'''Model3 best-> {i} {getMax(m3)}''')
 
+        #print("Model3 TfidfVectorizer y stemmed")
+        resultDataset = datasetFileBinary(vectorizer2, 0)
+        m4=bestModel(resultDataset, "model4")
+        print(f'''Model4 best-> {i} {getMax(m4)}''')
 
+        #print("Model4 TfidfVectorizer y no stemmed")
+        resultDataset = datasetFileBinary(vectorizer2, 1)
+        m5=bestModel(resultDataset, "model5")
+        print(f'''Model5 best-> {i} {getMax(m5)}''')
+
+        resultDataset = datasetFileBinary(vectorizer2, 2)
+        m6=bestModel(resultDataset, "model6")
+        print(f'''Model6 best-> {i} {getMax(m6)}''')
+
+        SVM += m1[2]+m2[2]+m3[2]+m4[2]+m5[2]+m6[2]
+        NB += m1[0]+m2[0]+m3[0]+m4[0]+m5[0]+m6[0]
+        LRC += m1[1]+m2[1]+m3[1]+m4[1]+m5[1]+m6[1]
+        KNN += m1[3]+m2[3]+m3[3]+m4[3]+m5[3]+m6[3]
+        RFC += m1[4]+m2[4]+m3[4]+m4[4]+m5[4]+m6[4]
+        ma = max(SVM, NB, LRC, KNN, RFC)
+    if ma == SVM:
+        max_string = "SVM"
+    elif ma == NB:
+        max_string = "NB"
+    elif ma == LRC:
+        max_string = "LRC"
+    elif ma == KNN:
+        max_string = "KNN"
+    else:
+        max_string = "RFC"
+
+    total_m1=sum(m1)
+    total_m2=sum(m2)
+    total_m3=sum(m3)
+    total_m4=sum(m4)
+    total_m5=sum(m5)
+    total_m6=sum(m6)
+    ma2=max(total_m1,total_m2,total_m3,total_m4,total_m5,total_m6)
+
+    if ma2 == total_m1:
+        max2_string = "Model1"
+    elif ma2 == total_m2:
+        max2_string = "Model2"
+    elif ma2 == total_m3:
+        max2_string = "Model3"
+    elif ma2 == total_m4:
+        max2_string = "Model4"
+    elif ma2==total_m5:
+        max2_string = "Model5"
+    else:
+        max2_string="Model6"
+
+    print(f'''Resultado final mejor modelo de media-> {max2_string} {ma2/5}''')
+    print(f'''Resultado final mejor algoritmo de media-> {max_string} {ma/(6*len(states))}''')
 
 
