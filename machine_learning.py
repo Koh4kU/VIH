@@ -16,15 +16,16 @@ from nltk import download
 import sys
 import nltk
 import spacy
-
-
 from datetime import datetime
+
+from transformers import AutoTokenizer, AutoModelForTokenClassification, pipeline
+import torch
+
 #download()
 #python -m spacy download es_core_news_sm
-
+#pip install transformers==2.9
+#pip install spacy;pip install nltk; pip install sklearn; pip install transformers; pip install torch;
 def bestModel(resultDataset, file):
-
-
 
 
     x_train_count=resultDataset[0]
@@ -197,10 +198,20 @@ def vectorize(x, y, vectorizer, flag):
         list_x=x
     #Proyecto de edican named entity recognition with bert
     else:
-        "a"
+        tokenizer = AutoTokenizer.from_pretrained("lcampillos/roberta-es-clinical-trials-ner")
+        model = AutoModelForTokenClassification.from_pretrained("lcampillos/roberta-es-clinical-trials-ner")
+        nerpipeline=pipeline("ner", model=model,tokenizer=tokenizer)
+        temp=""
+        for i in x:
+            for j in nerpipeline(i):
+                if j["word"].startswith("Ġ"):
+                    temp+=" "+j["word"][1:]
+                else:
+                    temp+=j["word"]
+            list_x.append(temp)
+            temp=""
+
     x_train, x_test, y_train, y_test = train_test_split(list_x, y, test_size=0.4, train_size=0.6, random_state=RANDOM_STATE, stratify=y)
-
-
 
     x_train_count = vectorizer.fit_transform(x_train)
     x_test_counts = vectorizer.transform(x_test)
@@ -230,6 +241,7 @@ def getMax(m1):
     return (max_string,ma)
 
 if __name__=="__main__":
+    start=datetime.now()
     vectorizer1 = CountVectorizer(max_features=1500, min_df=5, max_df=0.7)
     vectorizer2 = TfidfVectorizer(max_features=1500, min_df=5, max_df=0.7)
 
@@ -245,7 +257,6 @@ if __name__=="__main__":
     for i in states:
         RANDOM_STATE=i
 
-        #print("Model1 CountVectorizer y stemmed")
         #True si quieres la version stemmed y sin stop words
         #0 texto plano
         #1 texto stemmed y sin stop words
@@ -254,10 +265,8 @@ if __name__=="__main__":
     
         resultDataset = datasetFileBinary(vectorizer1, 0)
         m1=bestModel(resultDataset, "model1")
-
         print(f'''Model1 best-> {i} {getMax(m1)}''')
 
-        #print("Model2 CountVectorizer y no stemmed")
         resultDataset = datasetFileBinary(vectorizer1, 1)
         m2=bestModel(resultDataset, "model2")
         print(f'''Model2 best-> {i} {getMax(m2)}''')
@@ -266,19 +275,25 @@ if __name__=="__main__":
         m3=bestModel(resultDataset, "model3")
         print(f'''Model3 best-> {i} {getMax(m3)}''')
 
-        #print("Model3 TfidfVectorizer y stemmed")
-        resultDataset = datasetFileBinary(vectorizer2, 0)
-        m4=bestModel(resultDataset, "model4")
+        resultDataset = datasetFileBinary(vectorizer1, 3)
+        m4 = bestModel(resultDataset, "model4")
         print(f'''Model4 best-> {i} {getMax(m4)}''')
 
-        #print("Model4 TfidfVectorizer y no stemmed")
-        resultDataset = datasetFileBinary(vectorizer2, 1)
+        resultDataset = datasetFileBinary(vectorizer2, 0)
         m5=bestModel(resultDataset, "model5")
         print(f'''Model5 best-> {i} {getMax(m5)}''')
 
-        resultDataset = datasetFileBinary(vectorizer2, 2)
+        resultDataset = datasetFileBinary(vectorizer2, 1)
         m6=bestModel(resultDataset, "model6")
         print(f'''Model6 best-> {i} {getMax(m6)}''')
+
+        resultDataset = datasetFileBinary(vectorizer2, 2)
+        m7=bestModel(resultDataset, "model7")
+        print(f'''Model7 best-> {i} {getMax(m7)}''')
+
+        resultDataset = datasetFileBinary(vectorizer2, 3)
+        m8 = bestModel(resultDataset, "model8")
+        print(f'''Model8 best-> {i} {getMax(m8)}''')
 
         SVM += m1[2]+m2[2]+m3[2]+m4[2]+m5[2]+m6[2]
         NB += m1[0]+m2[0]+m3[0]+m4[0]+m5[0]+m6[0]
@@ -303,7 +318,10 @@ if __name__=="__main__":
     total_m4=sum(m4)
     total_m5=sum(m5)
     total_m6=sum(m6)
-    ma2=max(total_m1,total_m2,total_m3,total_m4,total_m5,total_m6)
+    total_m7=sum(m7)
+    total_m8=sum(m8)
+
+    ma2=max(total_m1,total_m2,total_m3,total_m4,total_m5,total_m6,total_m7,total_m8)
 
     if ma2 == total_m1:
         max2_string = "Model1"
@@ -315,10 +333,16 @@ if __name__=="__main__":
         max2_string = "Model4"
     elif ma2==total_m5:
         max2_string = "Model5"
-    else:
+    elif ma2 == total_m6:
         max2_string="Model6"
+    elif ma2 == total_m7:
+        max2_string = "Model7"
+    else:
+        max2_string = "Model8"
 
     print(f'''Resultado final mejor modelo de media-> {max2_string} {ma2/5}''')
-    print(f'''Resultado final mejor algoritmo de media-> {max_string} {ma/(6*len(states))}''')
+    print(f'''Resultado final mejor algoritmo de media-> {max_string} {ma/(8*len(states))}''')
 
+    end=datetime.now()
+    print(f'''Duración-> {end - start}''')
 
