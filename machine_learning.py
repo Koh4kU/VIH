@@ -11,7 +11,7 @@ import os
 from nltk.corpus import stopwords
 import re
 from nltk.stem import SnowballStemmer
-from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score, log_loss
 from nltk import download
 import sys
 import nltk
@@ -22,9 +22,8 @@ from transformers import AutoTokenizer, AutoModelForTokenClassification, pipelin
 import torch
 
 #download()
-#python -m spacy download es_core_news_sm
 #pip install transformers==2.9
-#pip install spacy;pip install nltk; pip install sklearn; pip install transformers; pip install torch;
+#pip install spacy;pip install nltk; pip install sklearn; pip install transformers; pip install torch;python -m spacy download es_core_news_sm;
 def bestModel(resultDataset, file):
 
 
@@ -40,6 +39,8 @@ def bestModel(resultDataset, file):
     nb_model.fit(x_train_count,y_train)
     y_pred_nb=nb_model.predict(x_test_counts)
     nb_score=nb_model.score(x_test_counts, y_test)
+    nb_loss=log_loss(y_test, y_pred_nb, eps=1e-15)
+
 
     #Regression
     lrc_model=LogisticRegression(random_state=0, multi_class="auto", solver="lbfgs", max_iter=1000)
@@ -47,6 +48,9 @@ def bestModel(resultDataset, file):
     lrc_model.fit(x_train_count,y_train)
     y_pred_lrc=lrc_model.predict(x_test_counts)
     lrc_score=lrc_model.score(x_test_counts, y_test)
+    lrc_loss=log_loss(y_test, y_pred_lrc, eps=1e-15)
+
+
 
     #K-nearest neighbours
     knn_model=KNeighborsClassifier()
@@ -54,6 +58,8 @@ def bestModel(resultDataset, file):
     knn_model.fit(x_train_count, y_train)
     y_pred_knn=knn_model.predict(x_test_counts)
     knn_score=knn_model.score(x_test_counts, y_test)
+    knn_loss=log_loss(y_test, y_pred_knn, eps=1e-15)
+
 
     #SVC
     svm_model=SVC(kernel="linear", gamma="auto")
@@ -61,6 +67,8 @@ def bestModel(resultDataset, file):
     svm_model.fit(x_train_count, y_train)
     y_pred_svm=svm_model.predict(x_test_counts)
     svm_score=svm_model.score(x_test_counts, y_test)
+    svm_loss=log_loss(y_test, y_pred_svm, eps=1e-15)
+
 
     #Random forest
     rfc_model=RandomForestClassifier(n_estimators=100, max_depth=2, random_state=0)
@@ -68,6 +76,7 @@ def bestModel(resultDataset, file):
     rfc_model.fit(x_train_count, y_train)
     y_pred_rfc=rfc_model.predict(x_test_counts)
     rfc_score=rfc_model.score(x_test_counts, y_test)
+    rfc_loss=log_loss(y_test, y_pred_rfc, eps=1e-15)
 
     print(f"""Unique nb->{set(y_test) - set(y_pred_nb)}""")
     print(f"""Unique svm->{set(y_test) - set(y_pred_svm)}""")
@@ -106,7 +115,10 @@ def bestModel(resultDataset, file):
                 {accuracy_score(y_test, y_pred_rfc)}\n''')
     with open("./results/scoreAll.txt", "a") as w:
         w.write(f"""{file} Random state->{RANDOM_STATE}\n""")
-        w.write(f"""nb_score {nb_score}\nlrc score {lrc_score}\nsvm score {svm_score}\nknn score {knn_score}\nrfc score {rfc_score}\n\n""")
+        w.write(f"""nb_score {nb_score}\nlrc_score {lrc_score}\nsvm_score {svm_score}\nknn_score {knn_score}\nrfc_score {rfc_score}\n\n""")
+    with open("./results/lossAll.txt", "a") as w:
+        w.write(f"""{file} Random state->{RANDOM_STATE}\n""")
+        w.write(f"""nb_loss {nb_loss}\nlrc_loss {lrc_loss}\nsvm_loss {svm_loss}\nknn_score {knn_loss}\nrfc_loss {rfc_loss}\n\n""")
 
 
     return (nb_score, lrc_score, svm_score, knn_score, rfc_score)
