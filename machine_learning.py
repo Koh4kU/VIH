@@ -39,7 +39,7 @@ def bestModel(resultDataset, file):
     nb_model.fit(x_train_count,y_train)
     y_pred_nb=nb_model.predict(x_test_counts)
     nb_score=nb_model.score(x_test_counts, y_test)
-    nb_loss=log_loss(y_test, y_pred_nb, eps=1e-15)
+    nb_loss=log_loss(y_test, nb_model.predict_proba(x_test_counts), eps=1e-15)
 
 
     #Regression
@@ -48,7 +48,7 @@ def bestModel(resultDataset, file):
     lrc_model.fit(x_train_count,y_train)
     y_pred_lrc=lrc_model.predict(x_test_counts)
     lrc_score=lrc_model.score(x_test_counts, y_test)
-    lrc_loss=log_loss(y_test, y_pred_lrc, eps=1e-15)
+    lrc_loss=log_loss(y_test, lrc_model.predict_proba(x_test_counts), eps=1e-15)
 
 
 
@@ -58,25 +58,26 @@ def bestModel(resultDataset, file):
     knn_model.fit(x_train_count, y_train)
     y_pred_knn=knn_model.predict(x_test_counts)
     knn_score=knn_model.score(x_test_counts, y_test)
-    knn_loss=log_loss(y_test, y_pred_knn, eps=1e-15)
+    knn_loss=log_loss(y_test, knn_model.predict_proba(x_test_counts), eps=1e-15)
 
 
     #SVC
-    svm_model=SVC(kernel="linear", gamma="auto")
+    svm_model=SVC(kernel="linear", gamma="auto", probability=True)
     #svm_model=Pipeline(steps=[("classifier", svmClassifier)])
     svm_model.fit(x_train_count, y_train)
     y_pred_svm=svm_model.predict(x_test_counts)
     svm_score=svm_model.score(x_test_counts, y_test)
-    svm_loss=log_loss(y_test, y_pred_svm, eps=1e-15)
-
+    svm_loss=log_loss(y_test, svm_model.predict_proba(x_test_counts), eps=1e-15)
+    print(svm_loss)
+    print(y_pred_svm.tolist())
 
     #Random forest
-    rfc_model=RandomForestClassifier(n_estimators=100, max_depth=2, random_state=0)
+    rfc_model=RandomForestClassifier(n_estimators=100, max_depth=2)
     #rfc_model=Pipeline(steps=[("classifier", randomForestClassifier)])
     rfc_model.fit(x_train_count, y_train)
     y_pred_rfc=rfc_model.predict(x_test_counts)
     rfc_score=rfc_model.score(x_test_counts, y_test)
-    rfc_loss=log_loss(y_test, y_pred_rfc, eps=1e-15)
+    rfc_loss=log_loss(y_test, rfc_model.predict_proba(x_test_counts), eps=1e-15)
 
     print(f"""Unique nb->{set(y_test) - set(y_pred_nb)}""")
     print(f"""Unique svm->{set(y_test) - set(y_pred_svm)}""")
