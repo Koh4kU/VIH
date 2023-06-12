@@ -2,6 +2,7 @@ import collections
 import pathlib
 import tensorflow as tf
 
+
 import os
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -45,7 +46,7 @@ def deep_learning(flag, random_state):
 
 
 
-    print(len(split_sklearn_y))
+    #print(len(split_sklearn_y))
 
     #dataset_train,dataset_test=tf.keras.utils.split_dataset(np.array(dataset), left_size=0.6, shuffle=True)
     x_train, x_test, y_train, y_test = train_test_split(split_sklearn_x, split_sklearn_y, test_size=0.4, train_size=0.6,
@@ -58,8 +59,9 @@ def deep_learning(flag, random_state):
 
     encoder.adapt(x_train)
 
-    print(encoder.get_vocabulary())
+    #print(encoder.get_vocabulary())
 
+    output_final=2
 
     model=tf.keras.Sequential([
         encoder,
@@ -70,7 +72,8 @@ def deep_learning(flag, random_state):
         ),
         tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(64)),
         tf.keras.layers.Dense(64, activation="relu"),
-        tf.keras.layers.Dense(1)
+        tf.keras.layers.Dense(64, activation="relu"),
+        tf.keras.layers.Dense(2)
     ])
 
     print([layer.supports_masking for layer in model.layers])
@@ -79,7 +82,8 @@ def deep_learning(flag, random_state):
     predictions = model.predict([sample])
     print(predictions)
 
-    model.compile(loss=tf.keras.losses.BinaryCrossentropy(from_logits=True),optimizer=tf.keras.optimizers.Adam(1e-4),
+    #tf.keras.losses.BinaryCrossentropy()
+    model.compile(loss="binary_crossentropy",optimizer=tf.keras.optimizers.Adam(1e-4),
     metrics=["accuracy"])
     '''
     x_mapped_train=dataset_train.map(lambda data: data[0])
@@ -97,7 +101,8 @@ def deep_learning(flag, random_state):
 
     history = model.fit(x_train, y_train, validation_data=((x_test, y_test)),epochs=10)
     '''
-    history = model.fit(np.array(x_train), np.array(y_train),epochs=10)
+    history = model.fit(np.array(x_train), np.array(y_train),
+                        epochs=30, callbacks=[tf.keras.callbacks.EarlyStopping(patience=2)],validation_data=(x_test, y_test),batch_size=50)
 
     test_loss, test_acc=model.evaluate(np.array(["Hola esta persona tiene VIH ya que tiene enfermedades sexuaes, papiloma y fiebre"]), np.array([1]))
 

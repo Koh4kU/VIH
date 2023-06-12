@@ -62,19 +62,19 @@ def main():
 #print("Con VIH: "+ str(result))
 #print("Total arhcivos: " +str(total))
 
-    media=0
-    for i in range(0,4):
-        if i == 0:
-            no_vih=100-((result[i] * 100) / total[i])
-            percentaje.append("%.2f" % no_vih)
-            media+=no_vih
-        else:
-            percentaje.append("%.2f" % ((result[i] * 100) / total[i]))
-            media+=((result[i] * 100) / total[i])
-    media=media/4
-    print(f"""Porcentaje correcto: {percentaje} \tMedia: {"%.2f" % media}""")
-    print(f"""Falsos positivos: {"%.2f" % (100-float(percentaje[0]))}""")
-    print(f"""Falsos negativos: {"%.2f" % (100-((float)(percentaje[1])+(float)(percentaje[2])+(float)(percentaje[3]))/3)}""")
+    true_negatives = (total[0] - result[0])
+    true_positives = sum(result[1:])
+    accuracy = (true_positives + true_negatives) / sum(total)
+
+    false_negatives = sum(total[1:]) - sum(result[1:])
+    false_positive = result[0]
+
+    precision = true_positives / (true_positives + false_positive)
+    recall = true_positives / (true_positives + false_negatives)
+    f1_score=(2*precision*recall)/(precision+recall)
+    print(
+        f"""True positive-> {true_positives / sum(total)}\tTrue negative-> {true_negatives / sum(total)}\tFalse negatives -> {false_negatives / sum(total)}\t False positive->{false_positive / sum(total)}""")
+    print(f"""Accuracy -> {accuracy}\tPrecision-> {precision}\tRecall-> {recall}\tF1 score-> {f1_score}""")
 
 
 def tokenize_list(t, stop_words, spanish_stemmer):
